@@ -3,9 +3,10 @@
     char *addr_type = NULL;
 %}
 %option noyywrap
-
-v4 "WRITE YOUR REGULAR EXPRESSIONS HERE"
-v6 "ADD ANY SUB-PATTERNS AS YOU WANT"
+n255 ([0-9]|([1-9][0-9])|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))
+hexnum ([0-9a-fA-F]{1,4})
+v4 ^({n255}\.){3}{n255}$
+v6 ^({hexnum}\:){7}{hexnum}$
 
 %%
 {v4} { indicator = 4; }
