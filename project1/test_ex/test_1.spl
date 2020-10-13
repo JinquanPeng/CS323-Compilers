@@ -1,0 +1,14 @@
+int test_1_r01(int a, int b)
+{
+  // line comment
+  c = 'c';
+  if (a > b)
+  {
+    // line comment
+    return a;
+  }
+  else
+  {
+    return b;
+  }
+}

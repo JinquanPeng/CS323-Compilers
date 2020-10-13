@@ -1,0 +1,9 @@
+int test(int left, int right)
+{
+   int mid = (left+right)/2;
+   while( left < right )
+   {
+       left = left + mid/2;
+   }
+   return 1;
+}

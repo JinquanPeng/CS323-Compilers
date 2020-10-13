@@ -1,0 +1,5 @@
+int test(){
+	int a = 001;
+	int b = 0xg;
+	return 0;
+}

@@ -1,0 +1,6 @@
+int a(){}
+
+int test(){
+    a
+    return 0;
+}
